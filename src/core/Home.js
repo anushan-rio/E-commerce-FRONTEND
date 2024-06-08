@@ -6,7 +6,7 @@ const Home=()=>{
    console.log("API is",{API})
     return(
         <Base title={"Home Page"}>
-            <h1>hi</h1>
+            <h1>Home Page</h1>
         </Base>
     )
 }
