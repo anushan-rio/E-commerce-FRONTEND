@@ -4,7 +4,7 @@ import "../Style.css"
 const Cart=()=>{
    
      return(
-         <Base title={"Cart"}>
+         <Base title="Cart" description="MyCart">
              <h1>Cart</h1>
          </Base>
      )
