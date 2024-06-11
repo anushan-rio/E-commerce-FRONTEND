@@ -43,12 +43,12 @@ const Meun=({history})=>{
                     </Link>
                  </li>
                  <li className="nav-item">
-                    <Link  style={currentTab(history, "/siginin")} className="nav-link" to="/siginin">
+                    <Link  style={currentTab(history, "/Sigin")} className="nav-link" to="/Sigin">
                         SignIn
                     </Link>
                  </li>
                  <li className="nav-item">
-                    <Link  style={currentTab(history, "/signout")} className="nav-link" to="/signout">
+                    <Link  style={currentTab(history, "/SignOut")} className="nav-link" to="/sign">
                         SignOut
                     </Link>
                  </li>

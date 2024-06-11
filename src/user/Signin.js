@@ -35,7 +35,7 @@ const onSubmit = event => {
       } else {
         console.log("isAutheticated----2")
         authenticate(data, () => {
-          console.log("isAutheticated----1")
+          console.log("isAutheticated----1",data)
           setValues({
             ...values,
             didRedirect: true
