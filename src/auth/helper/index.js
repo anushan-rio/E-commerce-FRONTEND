@@ -11,7 +11,8 @@ export const signup=user=>{
         body:JSON.stringify(user)
     })
     .then(response=>{
-        return response.json()
+      console.log("response----",response)    
+      return response.json()
     })
     .catch(err=>{
         console.log("error---->"+err)
@@ -30,7 +31,8 @@ export const signin=user=>{
         body:JSON.stringify(user)
     })
     .then(response=>{
-        return response.json()
+      console.log("response----",response)  
+      return response.json()
     })
     .catch(err=>{
         console.log("error---->"+err)
