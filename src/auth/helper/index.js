@@ -2,6 +2,7 @@ import {API} from "../../BackEnd"
 
 
 export const signup=user=>{
+  console.log("user----",user)
     return fetch(`${API}/signup`,{
        method:"Post",
        headers:{
@@ -41,6 +42,7 @@ export const signin=user=>{
 }
 
 export const authenticate = (data, next) => {
+  console.log("typeof window----1-->",typeof window)
     if (typeof window !== "undefined") {
       localStorage.setItem("jwt", JSON.stringify(data));
       next();
@@ -48,6 +50,7 @@ export const authenticate = (data, next) => {
   };
 
   export const signout = next => {
+    console.log("typeof window------>",typeof window)
     if (typeof window !== "undefined") {
       localStorage.removeItem("jwt");
       next();
