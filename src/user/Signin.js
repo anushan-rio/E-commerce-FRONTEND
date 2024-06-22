@@ -28,7 +28,8 @@ const onSubmit = event => {
   event.preventDefault();
   setValues({ ...values, error: false, loading: true });
   signin({ email, password })
-    .then(data => {
+    .then((data) => {
+      console.log("data====>",data)
       if (data.error) {
         console.log("data.error-----"+data.error)
         setValues({ ...values, error: data.error, loading: false });
