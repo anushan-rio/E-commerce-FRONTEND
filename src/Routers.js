@@ -7,7 +7,7 @@ import Signup from "./user/Signup";
 import Sigin from "./user/Signin"
 import UserDashboard from "./user/UserDashboard"
 import AdminDashboard from "./user/AdminDashBoard"
- 
+import AddCategory from "./admin/AddCategory"
 const Routers = () => {
   return (
     <BrowserRouter>
@@ -18,12 +18,13 @@ const Routers = () => {
         <Route  path="/Sigin" element={<Sigin/>} />
         <Route path="/user/dashboard" element={<UserDashboard/>} />
         <Route path="/admin/dashboard" element={<AdminDashboard/>} />
+        <Route path="/admin/create/category" element={<AddCategory/>} />
         
     </Routes>
     
     </BrowserRouter>
     
-  );
-};
+    );
+  };
 
 export default Routers;
